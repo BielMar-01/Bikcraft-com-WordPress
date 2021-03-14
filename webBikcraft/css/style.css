@@ -1,11 +1,32 @@
-/* ESTILOS GERAIS */
+/* GENERAL STYLES */
 
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HEADER */
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 20px;
+}
 
+.btn {
+  border: 3px solid #fec63e; 
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.btn:hover {
+  color: #fff;
+  border-color:#fff;
+}
+
+/* HEADER */
 .header {
   position: fixed;
   top: 0;
@@ -38,4 +59,47 @@ body {
   color: #FFF;
 }
 
-/* INTRODUÇÂO */
+/* INTRODUCTION */
+.introduction {
+  width: 100%;
+  height: 380px;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 96px;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.introduction h1 {
+  font-size: 48px;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.quote-external {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.quote-external p {
+  font-style: italic;
+}
+
+.quote-external p:before, .quote-external p:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 14px auto 10px auto;
+}
+
+.quote-external cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .1em;
+}
