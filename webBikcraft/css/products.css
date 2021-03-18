@@ -70,3 +70,105 @@
 .products_info ul li:nth-child(even) {
   margin-left: 2px;
 }
+
+/* BUDGET */
+.budget {
+  background: #000;
+  width: 100%;
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.budget h2 {
+  color: #fec63e;
+}
+
+.budget h2:after {
+  background: #fec63e;
+}
+
+.form_budget {
+  padding-right: 60px;
+}
+
+.form_budget label {
+  display: block;
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 4px;
+}
+
+.form_budget input {
+  display: block;
+  width: 100%;
+  border: 4px solid #fec63e;
+  background: none;
+  color: #fff;
+  padding: 7px 10px;
+  margin-bottom: 10px;
+  outline: none;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', serif;
+} 
+
+.form_budget textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 4px solid #fec63e;
+  background: none;
+  color: #fff;
+  padding: 7px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.form_budget button {
+  padding: 7px 40px;
+  background: none;
+}
+
+.budget_data {
+  color: #fff;
+}
+
+.budget_data h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fec63e;
+  font-weight: bold;
+}
+
+.budget_data span {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.budget_data ul {
+  padding-right: 60px;
+}
+
+.budget_data ul li {
+  font-size: 14px;
+  font-family: Georgia, 'Times New Roman', serif;
+  padding: 10px 15px;
+}
+
+.budget_data ul li:nth-child(odd) {
+  background: #1d1d1d;
+}
+
+.budget_data p {
+  margin: 8px 0;
+}
+
+.email_data {
+  margin-bottom: 40px;
+}
