@@ -112,7 +112,6 @@ img {
 .header_menu ul li  a.active_menu {
   color: #fff;
   border: #fff solid 3px;
-  border-radius: 10px;
   padding: 5px;
 }
 
@@ -194,6 +193,10 @@ img {
 .products_list li {
   background: #fec63e;
   text-align: center;
+}
+
+.products_list li img {
+  margin: 0 auto;
 }
 
 .products_list li  h3 {

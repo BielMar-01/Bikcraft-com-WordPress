@@ -1,0 +1,57 @@
+/* TABLETS STYLES */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+
+  
+
+}
+
+/* SMARTPHONES STYLES */
+@media only screen and (max-width: 787px) {
+
+  /* HEADER */
+  .header {
+    position: relative;
+    padding: 0;
+  }
+
+  .header img {
+    margin: 0 auto 10px auto;
+  }
+
+  .header_menu {
+    text-align: center;
+  }
+
+  .header_menu ul li {
+    margin: 5px;
+  }
+
+  .header_menu ul li  a {
+    border: 4px solid #000;
+    width: 136px;
+    display: block;
+    float: left;
+  }
+
+  .header_menu ul li  a.active_menu {
+    border: 4px solid #fff;
+    border-radius: 0px;
+    width: 140px;
+    padding: 10px;
+    display: block;
+    float: left;
+  }
+
+  .header_menu ul li  a:hover {
+    border-color: #fff;
+  }
+
+
+  /* INTRODUCTION */  
+  .introduction {
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+    background-size: cover;
+    margin-top: 0px;
+    padding-top: 20px;
+  }
+}
