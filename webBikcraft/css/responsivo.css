@@ -22,6 +22,28 @@
     height: 26px;
   }
 
+  /* PRODUCT */
+  .products_item h2 {
+    top: -150px;
+    margin-bottom: -56px;
+  }
+
+  .products_icon {
+    padding: 41px 0;
+  }
+
+  .products_info p {
+    font-size: 14px;
+    line-height: 20px;
+    height: 122px;
+    padding: 20px 30px;
+  }
+
+  .products_info ul li {
+    width: 181px;
+    height: 49px;
+  }
+
 }
 
 /* SMARTPHONES STYLES */
@@ -99,5 +121,39 @@
   /* QUALiTY*/
   .quality:after {
     display: none;
+  }
+
+  /* PRODUCT */
+  .products_item h2 {
+    top: -100px;
+    margin-bottom: -68px;
+  }
+
+  .products_icon {
+    padding: 41px 0;
+  }
+
+  .products_info p {
+    font-size: 14px;
+    line-height: 20px;
+    height: auto;
+    padding: 20px 30px;
+  }
+
+  .products_info ul li {
+    width: 149px;
+    height: 49px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 14px;
+  }
+
+  /* BUDGET */
+  .form_budget {
+    padding-right: 0px;
+  }
+
+  .budget_data ul {
+    padding-right: 0px;
   }
 }
