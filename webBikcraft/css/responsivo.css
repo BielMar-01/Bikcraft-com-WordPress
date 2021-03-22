@@ -55,16 +55,12 @@
   .header_menu ul li  a.active_menu {
     border: 4px solid #fff;
     border-radius: 0px;
-    width: 140px;
     padding: 10px;
-    display: block;
-    float: left;
   }
 
   .header_menu ul li  a:hover {
     border-color: #fff;
   }
-
 
   /* INTRODUCTION */  
   .introduction {
@@ -83,7 +79,24 @@
     padding-top: 10px;
   }
 
-  /* QUALITY */
+  /* INTRODUCTION-INTERNAL */
+  .introduction-internal {
+    margin-top: 0px;
+  }
+
+  /* ABOUT US */
+  .mission_about p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 0px;
+  }
+
+  .mission_about p ul li {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  /* QUALiTY*/
   .quality:after {
     display: none;
   }
