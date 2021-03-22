@@ -1,7 +1,26 @@
 /* TABLETS STYLES */
 @media only screen and (min-width: 788px) and (max-width: 979px) {
 
-  
+  /* QUALITY */
+  .quality:after {
+    right: 66px;
+  }
+
+  .quality_list li {
+    padding: 0 10px;
+  }
+
+  /* FOOTER */
+  .footer_midias ul li a {
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 6px;
+  }
+
+  .footer_midias ul li a img {
+    width: 26px;
+    height: 26px;
+  }
 
 }
 
@@ -52,6 +71,20 @@
     background: url("../img/bg-mobile.jpg") no-repeat center;
     background-size: cover;
     margin-top: 0px;
-    padding-top: 20px;
+    padding-top: 40px;
+  }
+
+  .introduction  h1 {
+    font-size: 36px;
+  }
+
+  /* PRODUCTS */
+  .call-to-action {
+    padding-top: 10px;
+  }
+
+  /* QUALITY */
+  .quality:after {
+    display: none;
   }
 }
