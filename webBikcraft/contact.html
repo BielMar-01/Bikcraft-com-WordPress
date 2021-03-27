@@ -48,25 +48,32 @@
 
   <!-- BUDEGT -->
   <section class="contact container fadeInDown" data-anime="1200">
-    <form id="form_contact" class="form_contact grid-8">
+    <form id="form_contact" method="POST" action="./enviar-sendgrid.php" class="form_contact grid-8 formphp">
 
       <!-- Name -->
-      <label for="name">Nome</label>
-      <input type="text" id="name">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
 
       <!-- E-mail -->
       <label for="email">E-mail</label>
-      <input type="text" id="email">
+      <input type="email" id="email" name="email" required>
 
       <!-- Telephone -->
-      <label for="telephone">Telefone</label>
-      <input type="text" id="telephone">
+      <label for="telefone">Telefone</label>
+      <input type="text" id="telefone" name="telefone">
+
+      <!-- Anti Robs -->
+      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+      <input type="text" name="leaveblank" class="nao-aparece">
+
+      <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+      <input type="text" name="dontchange" value="http://" class="nao-aparece">
 
       <!-- Specifications -->
-      <label for="spec">Especificações</label>
-      <textarea id="spec"></textarea>
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
 
-      <button type="submit" class="btn btn-dark">Enviar</button>
+      <button id="enviar" name="enviar" type="submit" class="btn btn-dark">Enviar</button>
     </form>
 
     <!-- BUDGET DATA -->
@@ -179,6 +186,7 @@
   </footer>
 
   <script src="./js/simple-anime.js"></script>
+  <script src="./js/simple-form.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>
