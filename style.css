@@ -1,3 +1,19 @@
+/*
+Theme Name: Bikcraft
+Theme URI: http://bikcraft.com
+Author: Gabriel Marques
+Description: Tema criado para a Bikcraft
+Version: 1.0
+*/
+
+@import 'css/reset.css';
+@import 'css/normalize.css';
+@import 'css/grid.css';
+@import 'css/about.css';
+@import 'css/products.css';
+@import 'css/portfolio.css';
+@import 'css/contact.css';
+
 /* GENERAL STYLES */
 
 body {

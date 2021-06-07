@@ -15,7 +15,7 @@
 
 
   <!-- Estilos CSS-->
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
   
   <link rel="shortcut icon" href="./img/favicon.ico">
 
