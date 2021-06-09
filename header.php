@@ -38,11 +38,11 @@
       </a>
       <nav class="grid-12 header_menu">
         <ul>
-          <li><a href="index.html" class="active_menu">Home</a></li>
-          <li><a href="about.html">Sobre</a></li>
-          <li><a href="products.html">Produtos</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
-          <li><a href="contact.html">Contato</a></li>
+          <li><a href="/bikcraft/home/" class="active_menu">Home</a></li>
+          <li><a href="/bikcraft/sobre/">Sobre</a></li>
+          <li><a href="/bikcraft/produtos/">Produtos</a></li>
+          <li><a href="/bikcraft/portfolio/">Portfólio</a></li>
+          <li><a href="/bikcraft/contato/">Contato</a></li>
         </ul>
       </nav>
     </div>

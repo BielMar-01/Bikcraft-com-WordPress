@@ -1,3 +1,7 @@
+<?php
+// Template Name: Contato
+?>
+
 <?php get_header(); ?>
 
   <!-- INTRODUCTION INTERNAL -->

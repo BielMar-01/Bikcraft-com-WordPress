@@ -1,3 +1,7 @@
+<?php
+// Template Name: Produtos
+?>
+
 <?php get_header(); ?>
 
   <!-- INTRODUCTION INTERNAL -->

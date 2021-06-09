@@ -1,3 +1,7 @@
+<?php
+// Template Name: Portfolio
+?>
+
 <?php get_header(); ?>
 
   <!-- INTRODUCTION INTERNAL -->
