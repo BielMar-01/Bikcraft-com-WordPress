@@ -4,13 +4,9 @@
 
 <?php get_header(); ?>
 
-  <!-- INTRODUCTION INTERNAL -->
-  <section class="introduction-internal internal_products">
-    <div class="container">
-      <h1 data-anime="400" class="fadeInDown">Produtos</h1>
-      <p data-anime="800"  class="fadeInDown quote-external">conheça todos os nossos produtos</p>
-    </div>
-  </section>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+  <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?> 
 
   <!-- PRODUCTS TOUR  -->
   <section class="container products_item fadeInDown" data-anime="1200">
@@ -136,5 +132,7 @@
       </div>
     </div>
   </section>
+
+  <?php endwhile; else: endif; ?>
   
   <?php get_footer(); ?>

@@ -4,13 +4,9 @@
 
 <?php get_header(); ?>
 
-  <!-- INTRODUCTION INTERNAL -->
-  <section class="introduction-internal internal_about">
-    <div class="container">
-      <h1 data-anime="400" class="fadeInDown">Sobre</h1>
-      <p data-anime="800" class="fadeInDown"> conheça mais sobre a bikcraft</p>
-    </div>
-  </section>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+  <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
   <!-- ABOUT US -->
   <section class="mission_about container fadeInDown" data-anime="1200">
@@ -67,5 +63,7 @@
     </ul>
 
   </section>
+
+  <?php endwhile; else: endif; ?>
   
 <?php get_footer(); ?>

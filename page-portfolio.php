@@ -4,13 +4,9 @@
 
 <?php get_header(); ?>
 
-  <!-- INTRODUCTION INTERNAL -->
-  <section class="introduction-internal internal_portfolio">
-    <div class="container">
-      <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
-      <p data-anime="800"  class="fadeInDown quote-external">conheça os projetos que amamos mostrar</p>
-    </div>
-  </section>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+  <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
   <!-- BLOCKQUOTE -->
   <section class="container fadeInDown" data-slide="quote" data-anime="1200">
@@ -47,5 +43,7 @@
       </ul>
     </div>
   </section>
+
+  <?php endwhile; else: endif; ?>
   
   <?php get_footer(); ?>

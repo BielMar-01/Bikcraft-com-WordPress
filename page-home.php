@@ -4,6 +4,8 @@
 
 <?php get_header(); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
   <!-- INTRODUCTION -->
   <section class="introduction">
     <div class="container">
@@ -103,5 +105,7 @@
       <a href="about.html" class="btn btn-dark" >Sobre</a>
     </div>
   </section>
+
+  <?php endwhile; else: endif; ?>
   
   <?php get_footer(); ?>

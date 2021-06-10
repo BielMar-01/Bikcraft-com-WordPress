@@ -4,13 +4,9 @@
 
 <?php get_header(); ?>
 
-  <!-- INTRODUCTION INTERNAL -->
-  <section class="introduction-internal internal_contact">
-    <div class="container">
-      <h1 data-anime="400" class="fadeInDown">Contato</h1>
-      <p data-anime="800"  class="fadeInDown quote-external">tire suas dúvidas com a gente</p>
-    </div>
-  </section>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  
+  <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
   <!-- BUDEGT -->
   <section class="contact container fadeInDown" data-anime="1200">
@@ -79,5 +75,7 @@
   <section class="container mapa_contact">
     <a class="grid-16" href="http://google.com" target="_blank"><img src="img/endereco-bikcraft.jpg" alt="Endereço da Bikcraft"></a>
   </section>
+
+  <?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>
