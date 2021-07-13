@@ -29,7 +29,7 @@
 						<h3>Contato</h3>
 						<ul>
 							<li>- <?php the_field('telefone', $contato); ?></li>
-							<li>- <?php the_field('email', $contato); ?>/li>
+							<li>- <?php the_field('email', $contato); ?></li>
 							<li>- <?php the_field('endereco1', $contato); ?></li>
 						</ul>
 					</div>
