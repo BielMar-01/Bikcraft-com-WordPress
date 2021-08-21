@@ -7,7 +7,7 @@ get_header();
 
 		<?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
-		<section class="contato container animar-interno">
+		<section class="contato container fadeInDown" data-anime="1200">
 			<form action="<?php echo get_template_directory_uri(); ?>/enviar.php" method="post" name="form" class="formphp contato_form grid-8">
 				<label for="nome">Nome</label>
 				<input id="nome" name="nome" type="text">
@@ -29,7 +29,7 @@ get_header();
 
 			<div class="contato_dados grid-8">
 				<h3>Dados</h3>
-				<span> <?php the_field('telefone'); ?> </span>
+				<span><?php the_field('telefone'); ?></span>
 				<span><?php the_field('email'); ?></span>
 				<span><?php the_field('endereco1'); ?></span>
 				<span><?php the_field('endereco2'); ?></span>

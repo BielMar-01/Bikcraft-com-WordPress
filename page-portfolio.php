@@ -7,24 +7,17 @@ get_header();
 	
 		<?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
-		<section class="container animar-interno">
-			<ul class="rslides">
-
-				<?php if ( have_rows('quote_portfolio') ) : while ( have_rows('quote_portfolio') ) : the_row(); ?>
-					<li>
-						<blockquote class="quote_clientes">
-							<?php the_sub_field('quote'); ?>
-							<cite><?php the_sub_field('nome_quote'); ?></cite>
-						</blockquote>
-					</li>
-				<?php endwhile; else: endif; ?>
-			</ul>
+		<section class="container fadeInDown" data-slide="quote" data-anime="1200">
+				<?php if(have_rows('quote_portfolio')): while(have_rows('quote_portfolio')) : the_row(); ?>
+					<blockquote class="quote_clientes">
+						<?php the_sub_field('quote'); ?>
+						<cite><?php the_sub_field('nome_quote'); ?></cite>
+					</blockquote>
+				<?php endwhile; else : endif; ?>
 		</section>
 
 		<section class="portfolio">
-			<div class="container">
-				<?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php"); ?>
-			</div>
+			<?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php"); ?>
 		</section>
 <?php endwhile; else: endif; ?>
 

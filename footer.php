@@ -1,14 +1,6 @@
-<?php $contato = get_page_by_title('contato'); ?>		
+<?php $contato = get_page_by_title('contato'); ?>
 
-	<style type="text/css">
-		.quebra {
-			background: url("<?php the_field('back_footer', $contato); ?>") no-repeat center;
-			background-size: cover;
-		}
 
-	</style>
-
-		
 		<div class="quebra">
 			<blockquote class="quote-externo container">
 				<?php the_field('frase_footer', $contato); ?>
@@ -35,7 +27,7 @@
 					</div>
 
 					<div class="grid-4 footer_redes">
-						<h3>Contato</h3>
+						<h3>Redes Sociais</h3>
 						<?php include(TEMPLATEPATH . "/inc/redes-sociais.php"); ?>
 					</div>
 
@@ -48,13 +40,6 @@
 				</div>
 			</div>
 		</footer>
-
-	<!-- JavaScript -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.2.min.js"><\/script>')</script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
-	<!-- JavaScript -->
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

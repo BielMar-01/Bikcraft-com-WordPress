@@ -14,9 +14,11 @@ Version: 1.0
 @import 'css/produtos.css';
 @import 'css/portfolio.css';
 @import 'css/contato.css';
+@import 'css/blog.css';
 
-/* Estilos ADm Wordpress */
-.custom-support .header {
+/* Estilos ADM Wordpress */
+
+.customize-support .header {
 	margin-top: 32px;
 }
 
@@ -320,7 +322,7 @@ img {
 	width: 634px;
 	height: 83px;
 	display: block;
-	background: url("../img/linhas.png") no-repeat center;
+	background: url("img/linhas.svg") no-repeat center;
 	position: absolute;
 	top: 209px;
 	right: 162px;
@@ -433,217 +435,242 @@ img {
 
 /*Animações*/
 
-.js .introducao h1, .js .introducao blockquote, .js .introducao .btn, .js .animar, .js .animar-interno, .js .introducao-interna h1, .js .introducao-interna p {
+/*JAVASCRIPT*/
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.js [data-slide-nav] {
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 4px;
+	border: none;
+	padding: 0px;
+	border-radius: 6px;
+	text-indent: -99px;
+	overflow: hidden;
+	background: #1d1d1d;
+}
+
+.js [data-slide-nav] button.active {
+	background: #fec63e;
+}
+
+.js [data-anime] {
 	opacity: 0;
 }
 
-.animated {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+.js .fadeInDown {
+	transform: translate3d(0, -20px, 0);
 }
 
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -20px, 0);
-            transform: translate3d(0, -20px, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
+.js .anime {
+	opacity: 1;
+	transform: none;
+	transition: opacity 800ms, transform 800ms;
 }
 
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -20px, 0);
-            transform: translate3d(0, -20px, 0);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-            transform: none;
-  }
+.nao-aparece {
+	visibility: hidden;
+	position: absolute;
+	height: 0px;
 }
 
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
+#form-sucesso {
+	color: #31aa39;
 }
+
+#form-erro {
+	color: #f64540;
+}
+
+/*ESTILOS RESPONSIVOS*/
 
 /*Estilo para tablets*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
-	/*Qualidade Home*/
-	.qualidade:after {
-		right: 66px;
-	}
-	
-	.qualidade_lista li {
-		padding: 0 10px;
-	}
-	
-	/*Footer*/
-	
-	.footer_redes ul li a {
-		border: 3px solid #fec63e;
-		display: block;
-		padding: 6px;
-	
-	}
-	
-	.footer_redes ul li a img{
-		width: 26px;
-		height: 26px;
-	}
-	
-	/*Produtos*/
-	
-	.produto_item h2{
-		top: -150px;
-		margin-bottom: -56px;
-	}
-	
-	.produto_icone {
-		padding: 41px 0;
-	}
-	
-	.produto_info p{
-		font-size: 14px;
-		line-height: 20px;
-		height: 122px;
-		padding: 20px 30px;
-	}
-	
-	.produto_info ul li {
-		width: 181px;
-		height: 49px;
-	}
-	
-	} /* Final do estilo para tablets */
-	
-	/*Estilo para smartphone*/
-	@media only screen and (max-width: 767px) {
-	
-	/*Header*/
-	.header {
-		position: relative;
-		padding-bottom: 0px;
-	}
-	
-	.header img {
-		margin: 0 auto 10px auto;
-	}
-	
-	.header_menu {
-		text-align: center;
-	}
-	
-	.header_menu ul li {
-		margin: 5px;
-	}
-	
-	.header_menu ul li a {
-		border: 4px solid #000;
-		width: 136px;
-		display: block;
-		float: left;
-	}
-	
-	.header_menu ul li a:hover {
-		border-color: #fff;
-	}
-	
-	.header_menu ul li a.menu_ativo {
-		border-color: #fff;
-	}
-	
-	/*Introducao*/
-	
-	.introducao h1 {
-		font-size: 36px;
-	}
-	
-	.introducao {
-		margin-top: 0px;
-		padding-top: 40px;
-		background-size: cover;
-	}
-	
-	/*Introdução Interna*/
-	
-	.introducao-interna {
-		margin-top: 0px;
-	}
-	
-	/*Call*/
-	.call {
-		padding-top: 10px;
-	}
-	
-	/*Qualidade Home*/
-	.qualidade:after {
-		display: none;
-	}
-	
-	/*Sobre*/
-	
-	.missao_sobre p {
-		font-size: 14px;
-		line-height: 20px;
-		padding-right: 0px;
-	}
-	
-	.missao_sobre ul li {
-		font-size: 14px;
-		line-height: 25px;
-	}
-	
-	/*Produtos*/
-	
-	.produto_item h2{
-		top: -100px;
-		margin-bottom: -68px;
-	}
-	
-	.produto_icone {
-		padding: 41px 0;
-	}
-	
-	.produto_info p{
-		font-size: 14px;
-		line-height: 20px;
-		height: auto;
-		padding: 20px 30px;
-	}
-	
-	.produto_info ul li {
-		width: 149px;
-		height: 49px;
-		font-size: 14px;
-		line-height: 20px;
-		padding-top: 14px;
-	}
-	
-	.form {
-		padding-right: 0px;
-	}
-	
-	.orcamento_dados ul {
-		padding-right: 0px;
-	}
-	
-	/*Contato*/
-	
-	.contato_form {
-		padding-right: 0px;
-		margin-bottom: 40px;
-	}
-	
-	} /* Final do estilo para smartphone */
+/*Qualidade Home*/
+.qualidade:after {
+	right: 66px;
+}
+
+.qualidade_lista li {
+	padding: 0 10px;
+}
+
+/*Footer*/
+
+.footer_redes ul li a {
+	border: 3px solid #fec63e;
+	display: block;
+	padding: 6px;
+
+}
+
+.footer_redes ul li a img{
+	width: 26px;
+	height: 26px;
+}
+
+/*Produtos*/
+
+.produto_item h2{
+	top: -150px;
+	margin-bottom: -56px;
+}
+
+.produto_icone {
+	padding: 41px 0;
+}
+
+.produto_info p{
+	font-size: 14px;
+	line-height: 20px;
+	height: 122px;
+	padding: 20px 30px;
+}
+
+.produto_info ul li {
+	width: 181px;
+	height: 49px;
+}
+
+} /* Final do estilo para tablets */
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 767px) {
+
+/*Header*/
+.header {
+	position: relative;
+	padding-bottom: 0px;
+}
+
+.header img {
+	margin: 0 auto 10px auto;
+}
+
+.header_menu {
+	text-align: center;
+}
+
+.header_menu ul li {
+	margin: 5px;
+}
+
+.header_menu ul li a {
+	border: 4px solid #000;
+	width: 136px;
+	display: block;
+	float: left;
+}
+
+.header_menu ul li a:hover {
+	border-color: #fff;
+}
+
+.header_menu ul li a.menu_ativo {
+	border-color: #fff;
+}
+
+/*Introducao*/
+
+.introducao h1 {
+	font-size: 36px;
+}
+
+.introducao {
+	margin-top: 0px;
+	padding-top: 40px;
+	background-size: cover;
+}
+
+/*Introdução Interna*/
+
+.introducao-interna {
+	margin-top: 0px;
+}
+
+/*Call*/
+.call {
+	padding-top: 10px;
+}
+
+/*Qualidade Home*/
+.qualidade:after {
+	display: none;
+}
+
+/*Sobre*/
+
+.missao_sobre p {
+	font-size: 14px;
+	line-height: 20px;
+	padding-right: 0px;
+}
+
+.missao_sobre ul li {
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/*Produtos*/
+
+.produto_item h2{
+	top: -100px;
+	margin-bottom: -68px;
+}
+
+.produto_icone {
+	padding: 41px 0;
+}
+
+.produto_info p{
+	font-size: 14px;
+	line-height: 20px;
+	height: auto;
+	padding: 20px 30px;
+}
+
+.produto_info ul li {
+	width: 149px;
+	height: 49px;
+	font-size: 14px;
+	line-height: 20px;
+	padding-top: 14px;
+}
+
+.form {
+	padding-right: 0px;
+}
+
+.orcamento_dados ul {
+	padding-right: 0px;
+}
+
+/*Contato*/
+
+.contato_form {
+	padding-right: 0px;
+	margin-bottom: 40px;
+}
+
+} /* Final do estilo para smartphone */
