@@ -17,6 +17,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- SEO feito -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<script>document.documentElement.classList.add("js");</script>
 
