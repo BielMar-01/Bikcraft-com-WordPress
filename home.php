@@ -2,6 +2,7 @@
 get_header();
 ?>
 
+<!-- Pagina dos Posts -->
 <section class="introducao-interna introducao-blog">
 	<div class="container">
 		<h1>Blog</h1>
@@ -27,7 +28,4 @@ get_header();
 <?php else: endif; ?>
 
 </div>
-
-
-
 <?php get_footer(); ?>
