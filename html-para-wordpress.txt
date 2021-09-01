@@ -282,3 +282,5 @@ Adicionar a imagem ao tema
 22 - Adicionar o blog
 
 Criar uma página especifica para o blog e adicionar ela nas Configurações > Leitura
+
+// Performance feita
